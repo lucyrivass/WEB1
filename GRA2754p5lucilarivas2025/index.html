@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Drag and Drop | Lucila Rivas 2025</title>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<style type="text/css">
+body {
+    background-color: #81C5E7;
+}
+wrapper {
+    margin: auto;
+    display: block;
+    padding: 10px;
+    width: 1366px;
+}
+div {
+    width: 231px;
+    height: 231px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 7px;
+    border-radius: 6px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+}
+div.words {
+    width: 231px;
+    background-color: #BDE7F9;
+    height: 70px;
+    margin-top: 15px;
+    text-align: center;
+}
+body header h1 {
+    text-align: center;
+    font-family: "Arima", system-ui;
+    font-size: 100px;
+}
+#armadillo {
+    background-image: url(Firefly%20armadillo%209617.jpg);
+    background-size: cover;
+}
+#pato {
+    background-image: url(Firefly%20duck%209617.jpg);
+    background-size: cover;
+}
+#caballo {
+    background-image: url(Firefly%20horse%2062864.jpg);
+    background-size: cover;
+}
+#toucan {
+    background-image: url(Firefly%20Give%20me%20a%20tucan%208128.jpg);
+    background-size: cover;
+}
+#gallina {
+    background-image: url(Firefly%20rooster%209617.jpg);
+    background-size: cover;
+}
+#burro {
+    background-image: url(Firefly%20donkey%209617.jpg);
+    background-size: cover;
+}
+#serpiente {
+    background-image: url(Firefly%20snake%209617-2.jpg);
+    background-size: cover;
+}
+#tiburon {
+    background-image: url(Firefly%20visual%20of%20a%20shark%20underwater%20in%20the%20ocean%2084610.jpg);
+    background-size: cover;
+}
+#ballena {
+    background-image: url(Firefly%20visual%20of%20a%20whale%20underwater%20in%20the%20ocean%2084610.jpg);
+    background-size: cover;
+}
+#lobo {
+    background-image: url(Firefly%20wolf%209617.jpg);
+    background-size: cover;
+}
+div img {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    width: auto;
+    margin: auto;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+}
+section {
+    margin: auto;
+    width: 1366px;
+}
+section div {
+    width: 268px;
+    margin: 0px;
+    padding-top: 0px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+    height: auto;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Que Animal Soy</h1>
+</header>
+<section>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="dropgallina"><img draggable="true" ondragstart="drag(event)" src="Animal-Name-PNGs/gallina.png" alt="" width="184" height="60" id="gallinatext"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="droptiburon"><img draggable="true" ondragstart="drag(event)" src="Animal-Name-PNGs/tiburon.png" alt="" width="217" height="60" id="tiburontext"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="droparmadillo"><img draggable="true" ondragstart="drag(event)" src="Animal-Name-PNGs/armadillo.png" alt="" width="274" height="61" id="armadillotext"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="dropcaballo"><img draggable="true" ondragstart="drag(event)" src="Animal-Name-PNGs/caballo.png" alt="" width="233" height="73" id="caballotexxt"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="dropserpiente"><img src="Animal-Name-PNGs/serpiente.png" alt="" width="252" height="60" id="serpientetext" draggable="true" ondragstart="drag(event)"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="droptoucan"><img src="Animal-Name-PNGs/Tucan.png" alt="" width="224" height="73" id="toucantext" draggable="true" ondragstart="drag(event)"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="dropburro"><img draggable="true" ondragstart="drag(event)" src="Animal-Name-PNGs/Burro.png" alt="" width="152" height="60" id="burrotext"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="droppato"><img draggable="true" ondragstart="drag(event)" src="Animal-Name-PNGs/Pato.png" alt="" width="149" height="73" id="Patotext"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="droplobo"><img draggable="true" ondragstart="drag(event)" src="Animal-Name-PNGs/lobo.png" alt="" width="136" height="60" id="lobotext"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="dropballena" ><img draggable="true" ondragstart="drag(event)" src="Animal-Name-PNGs/ballena.png" alt="" width="210" height="60" id="ballenatext"></div>
+	
+</section>
+	
+<wrapper>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="armadillo"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="pato"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="toucan"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="caballo"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="gallina"></div>
+  
+  <div class="words" id="armadillodrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="words"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="words"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="words"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="words"></div>
+  
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="burro"></div>
+<div ondrop="drop(event)" ondragover="allowDrop(event)" id="serpiente"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="ballena"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="lobo"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="tiburon"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="words"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="words" id="ballenadrop"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="words"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="words"></div>
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="words"></div>
+</wrapper>
+</body>
+</html>
