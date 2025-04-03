@@ -1,0 +1,91 @@
+@charset "UTF-8";
+wrapper {
+    margin: auto;
+    display: block;
+    width: 1366px;
+}
+body {
+    background-size: cover;
+    background-color: #F6F2E3;
+}
+ul a li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 33px;
+    padding-right: 33px;
+    margin: 0;
+    font-family: Atma;
+    font-weight: normal;
+}
+ul a li:hover {
+    background-color: #FFFFFF;
+    color: #F1C835;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+nav {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url(Griz/Backgrounds/9ad99d451f560a5530210149770764f1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav ul a {
+    padding-right: 0px;
+    background-image: url(Griz/Grizlogo.png);
+    font-size: 20px;
+}
+#mainhome {
+}
+wrapper main p {
+    margin-top: 17px;
+    margin-right: 17px;
+    margin-bottom: 17px;
+    margin-left: 17px;
+}
+.lineup {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.topsection {
+    color: #FFFFFF;
+    height: 234px;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+    width: 100%;
+    text-align: center;
+    padding-top: 22px;
+    vertical-align: middle;
+    min-width: 0px;
+    min-height: 0px;
+    /* [disabled]background-image: url(Griz/poulos-griz-wilmington-night1-2021-15-copy%20copy.jpg); */
+    background-color: #000000;
+    margin-top: -440px;
+    margin-bottom: 145px;
+}
+.griz {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+h2 {
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+h1 {
+    font-size: 30px;
+}
+footer {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+}
