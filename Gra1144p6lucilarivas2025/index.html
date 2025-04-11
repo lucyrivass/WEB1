@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dress Rollover</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style type="text/css">
+body {
+    margin: 0;
+    background-color: #BFCACA;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    background-color: #EAEAED;
+}
+header {
+    background-color: #BFCACA;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    text-align: center;
+}
+.logo {
+}
+nav {
+    height: 100
+&;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #BFCACA;
+    padding-top: 0px;
+    margin-top: -20px;
+}
+nav ul, .icons {
+    display: inline-block;
+    padding: 0;
+    vertical-align: bottom;
+}
+nav ul li, .icons {
+    vertical-align: top;
+}
+section {
+    height: 800px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+    padding-left: 0px;
+}
+.icons img {
+    display: inline;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    vertical-align: middle;
+    margin-top: 21px;
+}
+.searchbar {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 13px;
+    background-color: #EDEDEF;
+    display: inline-block;
+    height: 43px;
+    width: 145px;
+    background-size: contain;
+    float: left;
+    padding-left: 26px;
+    padding-right: 13px;
+    margin-right: 9px;
+    margin-top: 29px;
+    background-repeat: no-repeat;
+}
+.image {
+    position: relative;
+    margin-left: -76px;
+    margin-right: -42px;
+}
+.image img {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+footer {
+    padding: 10px;
+    background-color: #CBD6D6;
+    width: 100%;
+    margin-top: 30px;
+}
+button {
+    width: 50px;
+    margin: 10px;
+    height: 50px;
+    border-radius: 7px;
+}
+#blueswatch {
+    background-color: #3F5B58;
+}
+#greenswatch {
+    background-color: #514937;
+}
+#brownswatch {
+    background-color: #4D393A;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-left: -4px;
+    margin-bottom: 2px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 8px;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+}
+#size {
+    display: inline-block;
+    margin-left: -4px;
+    /* [disabled]border: medium solid #C5D0D0; */
+    text-align: center;
+    padding-right: 39px;
+    padding-left: 39px;
+    margin-bottom: -14px;
+}
+ul li:hover {
+    background-color: #DFE3EA;
+}
+#name {
+    font-size: 70px;
+	
+	
+}
+.sizes {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+.addtobag {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 15px;
+    color: #000000;
+    background-color: #C5D0D0;
+    /* [disabled]border: medium solid #000000; */
+}
+#description {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+.addtobag:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: medium solid #000000;
+}
+.description {
+    margin-left: 120px;
+}
+.price {
+    font-size: 40px;
+    margin-right: 63px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+.icons {
+    display: inline-block;
+    float: right;
+    margin-bottom: 0px;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('brown-dress-back.jpeg','green-dress-back.jpg','blue-dress-back.jpg')">
+<wrapper>
+<header><img src="ZaraLogo.png" alt="" width="346" height="144" class="logo"></header>
+<nav>
+  <ul>
+    <li>WOMAN</li>
+    <li>MEN</li>
+    <li>KIDS</li>  
+  </ul>
+  <div class="icons">
+    <input src="searchicon.png" alt="" width="" height="50" class="searchbar">
+    <img src="ProfileIcon.png" alt="" width="" height="50"><img src="BagIcon.png" alt="" width="" height="50"></div>
+	
+</nav>
+<main>
+  <section class="image"> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('brown-dress','','brown-dress-back.jpeg',1)"><img src="brown-dress-front.jpeg" alt="Brown Dress" width="467" height="700" id="brown-dress"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('green-dress','','green-dress-back.jpg',1)"><img src="green-dress-front.jpg" alt="Green dress" width="467" height="700" id="green-dress"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('blue-dress','','blue-dress-back.jpg',1)"><img src="blue-dress-front.jpg" alt="blue dress" width="467" height="700" id="blue-dress"></a></section>
+  <section class="description">
+<div id="name">ZW COLLECTION SATIN LONG DRESS</div>
+    <div id="description">
+		ZARA WOMANS COLLECTION</div>
+		 <div id="description">Long dress with a flowy V-neck and wide straps. Asymmetrical hem with a flared finish. Adjustable open back with laces.</div>
+    <div class="price">$ 49.99</div>
+<button id="blueswatch" onClick="MM_showHideLayers('brown-dress','','hide','green-dress','','hide','blue-dress','','show')"></button>
+    <button id="greenswatch" onClick="MM_showHideLayers('brown-dress','','hide','green-dress','','show','blue-dress','','hide')"></button>
+    <button id="brownswatch" onClick="MM_showHideLayers('brown-dress','','show','green-dress','','hide','blue-dress','','hide')"></button>
+    <div class="sizes">
+      <ul>
+        <li id="size">XS</li>
+        <li id="size">S</li>
+        <li id="size">M</li>
+        <li id="size">L</li>
+        <li id="size">XL</li>
+      </ul>
+    </div>
+<div class="addtobag">ADD TO BAG</div>
+</section>
+</main>
+<footer><p>© 2025, Lucila Rivas. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+</wrapper>
+
+
+</body>
+</html>
